@@ -1,3 +1,5 @@
+const router = require("express").Router();
+
 //Get All
 
 //Get by ID
@@ -11,3 +13,5 @@
 //Post Reaction
 
 //Delete Reaction
+
+module.exports = router;
