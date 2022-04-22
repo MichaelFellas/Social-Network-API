@@ -17,7 +17,9 @@ router.get("/", async (req, res) => {
 
 router.get("/:id", async (req, res) => {
   try {
-    const getOneThought = await Thought.findOne().select("-__v");
+    const getOneThought = await Thought.findOne({
+      _id: req.params.id,
+    }).select("-__v");
     res.status(200).json(getOneThought);
   } catch (err) {
     res.status(500).json(err);

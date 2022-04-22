@@ -12,7 +12,7 @@
 | [6. License.](#license)                         |
 | [7. Contributing.](#contributing)               |
 | [8. Technologies Used.](#technologies-used)     |
-| [9. Screenshot.](#screenshot)                   |
+| [9. Screenshots.](#screenshots)                 |
 | [10. Video Walkthrough.](#video-walkthrough)    |
 | [11. Questions.](#questions)                    |
 
@@ -81,7 +81,7 @@ If you would like to contribute to the project please message my github.
 5. Express.js
 6. Moment
 
-## Screenshot
+## Screenshots
 
 ![App-Screenshot](./assets/createUser.png)
 ![App-Screenshot](./assets/createThought.png)
@@ -89,7 +89,7 @@ If you would like to contribute to the project please message my github.
 
 ## Video Walkthrough
 
-[URL](https://mickeytechblog.herokuapp.com/blog)
+[URL](https://drive.google.com/file/d/1KUZ1s8Y3nwrG39lluqVOPAbol1u90QFI/view?usp=sharing)
 
 ## Questions
 
