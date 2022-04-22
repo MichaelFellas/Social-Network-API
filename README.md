@@ -85,7 +85,7 @@ If you would like to contribute to the project please message my github.
 
 ![App-Screenshot](./assets/createUser.png)
 ![App-Screenshot](./assets/createThought.png)
-![App-Screenshot](./assets/getUSers.png)
+![App-Screenshot](./assets/getUsers.png)
 
 ## Video Walkthrough
 
