@@ -1,32 +1,40 @@
-const { Schema, model } = require("mongoose");
+const { Schema, model, Types } = require("mongoose");
 var moment = require("moment");
 
 function getDate(date) {
-  var dateNow = moment(date).format(" Do MMM , YYYY [at] hh:mm a");
+  var dateNow = moment(date).format("Do/Mo/YYYY [at] hh:mma");
   return dateNow;
 }
 
-const reactionSchema = new Schema({
-  reactionId: {
-    type: Types.ObjectId,
-    default: new Types.ObjectId(),
+const reactionSchema = new Schema(
+  {
+    reactionId: {
+      type: Types.ObjectId,
+      default: new Types.ObjectId(),
+    },
+    reactionBody: {
+      type: String,
+      required: true,
+      minlength: 1,
+      maxlength: 280,
+    },
+    createdAt: {
+      type: Date,
+      default: Date.now,
+      get: getDate,
+    },
+    username: {
+      type: String,
+      required: true,
+    },
   },
-  reactionBody: {
-    type: String,
-    required: true,
-    minlength: 1,
-    maxlength: 280,
-  },
-  createdAt: {
-    type: Date,
-    default: Date.now,
-    get: getDate,
-  },
-  username: {
-    type: String,
-    required: true,
-  },
-});
+  {
+    toJSON: {
+      getters: true,
+    },
+    id: false,
+  }
+);
 
 const thoughtSchema = new Schema(
   {
